@@ -1,0 +1,5 @@
+# Registry signing keys must never be committed. Keep them outside this folder.
+*.pem
+*.key
+mcp-publisher.exe
+mcp-publisher

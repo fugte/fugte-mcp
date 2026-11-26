@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.fugte/widgets",
+  "title": "Fugte",
+  "description": "Save a widget your AI chat wrote to Fugte, where it stays editable without code and embeds anywhere",
+  "version": "1.0.0",
+  "websiteUrl": "https://fugte.com/ai-chat/",
+  "repository": {
+    "url": "https://github.com/fugte/fugte-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.fugte.app/mcp"
+    }
+  ]
+}
