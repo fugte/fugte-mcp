@@ -3,8 +3,15 @@
   "name": "com.fugte/widgets",
   "title": "Fugte",
   "description": "Save a widget your AI chat wrote to Fugte, where it stays editable without code and embeds anywhere",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://fugte.com/ai-chat/",
+  "icons": [
+    {
+      "src": "https://fugte.com/logo.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
   "repository": {
     "url": "https://github.com/fugte/fugte-mcp",
     "source": "github"
