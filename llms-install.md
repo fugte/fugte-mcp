@@ -10,8 +10,8 @@ user for an API key, and do not put anything in the URL.
 
 ## 2. Configure the connection
 
-- Server URL: `https://api.fugte.app/mcp` (exactly this; `fugte.com/mcp` and `fugte.app/mcp`
-  are not the server)
+- Server URL: `https://mcp.fugte.com/mcp` (exactly this, with `/mcp` at the end;
+  `fugte.com/mcp`, `fugte.app/mcp` and the retired `api.fugte.app/mcp` are not the server)
 - Transport: Streamable HTTP
 - Authentication: none
 

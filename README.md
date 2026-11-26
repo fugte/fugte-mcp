@@ -11,19 +11,19 @@ The MCP server lets an AI chat save the widget it wrote to Fugte. The chat gives
 Open it and sign in, and the widget is in the Fugte editor with its text, links, colors and
 sizes as fields you can change without code. Publish it, and paste the embed into your site.
 
-**Server URL:** `https://api.fugte.app/mcp` (Streamable HTTP, no sign-in)
+**Server URL:** `https://mcp.fugte.com/mcp` (Streamable HTTP, no sign-in)
 
 A guide for people rather than developers: https://fugte.com/ai-chat/
 
 ## Connect
 
-Use the address exactly as shown. It starts with `api.fugte.app`. Neither `fugte.com/mcp` nor
-`fugte.app/mcp` is the server.
+Use the address exactly as shown, including `/mcp` at the end. Neither `fugte.com/mcp` nor
+`fugte.app/mcp` is the server, and the earlier `api.fugte.app/mcp` was retired on 2026-11-26.
 
 ### Claude (claude.ai and the desktop app)
 
 1. Open **Customize**, then **Connectors**, and choose **Add**, then **Add custom connector**.
-2. Name it Fugte and paste `https://api.fugte.app/mcp` as the **MCP server URL**.
+2. Name it Fugte and paste `https://mcp.fugte.com/mcp` as the **MCP server URL**.
 3. Set **Authentication** to **No sign in**, and add it.
 4. In a chat, press **+**, open **Connectors** and switch Fugte on.
 
@@ -37,7 +37,7 @@ Tested end to end on 2026-11-24.
 
 1. Go to **chatgpt.com/plugins** and press **+**.
 2. Choose **Add custom MCP server** and name it Fugte.
-3. Paste `https://api.fugte.app/mcp` as the **Server URL** and set **Authentication** to
+3. Paste `https://mcp.fugte.com/mcp` as the **Server URL** and set **Authentication** to
    **No authentication**.
 4. Confirm the notice, choose **Create as a plugin**, and install it.
 5. In a chat, type **@** and pick Fugte.
@@ -54,7 +54,7 @@ tried with Fugte yet.
 Claude Code:
 
 ```bash
-claude mcp add --transport http fugte https://api.fugte.app/mcp
+claude mcp add --transport http fugte https://mcp.fugte.com/mcp
 ```
 
 Cursor (`.cursor/mcp.json`):
@@ -63,7 +63,7 @@ Cursor (`.cursor/mcp.json`):
 {
   "mcpServers": {
     "fugte": {
-      "url": "https://api.fugte.app/mcp"
+      "url": "https://mcp.fugte.com/mcp"
     }
   }
 }
@@ -76,7 +76,7 @@ VS Code (`.vscode/mcp.json`):
   "servers": {
     "fugte": {
       "type": "http",
-      "url": "https://api.fugte.app/mcp"
+      "url": "https://mcp.fugte.com/mcp"
     }
   }
 }
